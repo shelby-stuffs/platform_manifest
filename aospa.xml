@@ -3,16 +3,16 @@
 
   <!-- Build and Core -->
   <remove-project name="platform/art" />
-  <project path="art" name="shelby-stuffs/android_art" remote="github" />
+  <project path="art" name="shelby-stuffs/android_art" remote="github" revision="uvite" />
   <remove-project name="platform/bionic" />
-  <project path="bionic" name="shelby-stuffs/android_bionic" remote="github" />
+  <project path="bionic" name="shelby-stuffs/android_bionic" remote="github" revision="uvite" />
   <remove-project name="platform/build/bazel" />
   <project path="build/bazel" name="AOSPA/android_build_bazel" remote="aospa" >
     <linkfile src="bazel.WORKSPACE" dest="WORKSPACE" />
     <linkfile src="bazel.BUILD" dest="BUILD" />
   </project>
   <remove-project name="platform/build_repo" />
-  <project path="build/make" name="shelby-stuffs/platform_build" remote="github" >
+  <project path="build/make" name="shelby-stuffs/platform_build" remote="github" revision="uvite" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -34,7 +34,7 @@
 
   <!-- Device -->
   <remove-project name="device/qcom/common" />
-  <project path="device/qcom/common" name="shelby-stuffs/android_device_qcom_common" remote="github" >
+  <project path="device/qcom/common" name="shelby-stuffs/android_device_qcom_common" remote="github" revision="uvite" >
     <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
   <remove-project name="device/qcom/qssi" />
@@ -77,13 +77,13 @@
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/av" />
-  <project path="frameworks/av" name="shelby-stuffs/android_frameworks_av" remote="github" />
+  <project path="frameworks/av" name="shelby-stuffs/android_frameworks_av" remote="github" revision="uvite" />
   <remove-project name="platform/frameworks/base" />
-  <project path="frameworks/base" name="shelby-stuffs/android_frameworks_base" remote="github" />
+  <project path="frameworks/base" name="shelby-stuffs/android_frameworks_base" remote="github" revision="uvite" />
   <remove-project name="platform/frameworks/libs/systemui" />
   <project path="frameworks/libs/systemui" name="AOSPA/android_frameworks_libs_systemui" remote="aospa" />
   <remove-project name="platform/frameworks/native" />
-  <project path="frameworks/native" name="shelby-stuffs/android_frameworks_native" remote="github" />
+  <project path="frameworks/native" name="shelby-stuffs/android_frameworks_native" remote="github" revision="uvite" />
   <remove-project name="platform/frameworks/proto_logging" />
   <project path="frameworks/proto_logging" name="AOSPA/android_frameworks_proto_logging" remote="aospa" />
   <remove-project name="platform/frameworks/opt/net/wifi" />
@@ -160,7 +160,7 @@
   <remove-project name="platform/system/bpf" />
   <project path="system/bpf" name="AOSPA/android_system_bpf" remote="aospa" />
   <remove-project name="platform/system/core" />
-  <project path="system/core" name="shelby-stuffs/android_system_core" remote="github" />
+  <project path="system/core" name="shelby-stuffs/android_system_core" remote="github" revision="uvite" />
   <remove-project name="platform/system/chre" />
   <project path="system/chre" name="AOSPA/android_system_chre" remote="aospa" />
   <remove-project name="platform/system/libfmq" />
@@ -202,7 +202,7 @@
   <project path="toolchain/pgo-profiles" name="AOSPA/android_toolchain_pgo-profiles" remote="aospa" />
 
   <!-- Vendor (AOSPA) -->
-  <project path="vendor/aospa" name="shelby-stuffs/android_vendor_aospa" remote="github" >
+  <project path="vendor/aospa" name="shelby-stuffs/android_vendor_aospa" remote="github" revision="uvite" >
     <linkfile src="build.sh" dest="rom-build.sh" />
   </project>
   <project path="vendor/aospa/apps/ParanoidThemePicker" name="AOSPA/vendor_aospa_apps_ParanoidThemePicker" remote="aospa" />
